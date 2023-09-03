@@ -53,6 +53,14 @@ table, img {
     padding: 1em;
 }
 
+.pad-0.5 {
+    padding: 0.5em;
+}
+
+.pad-0.1 {
+    padding: 0.1em;
+}
+
 .hide {
     display: none;
 }
@@ -65,7 +73,7 @@ table, img {
 
 #content {
     margin: 0 auto;
-    line-height: 1.8em;
+    line-height: 1.2em;
 }
 
 #content li {
@@ -96,7 +104,7 @@ article, div.list {
 }
 
 div.list {
-    margin: 0.4em;
+    margin: 0.1em;
     flex: 1;
     padding: 0;
 }
@@ -138,6 +146,7 @@ section.toc h3 {
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
     font-size: 0.8em;
     padding-right: 1em;
+    float: right;
 }
 
 .tags {
@@ -170,7 +179,7 @@ span.author {
 
 h1, h2, h3 {
     font-weight: normal;
-    margin: 1.5em 0 0.5em 0;
+    margin: 0.5em 0 0.2em 0;
     line-height: 1.4em;
 }
 
@@ -294,3 +303,24 @@ blockquote {
 .pagination-item {
     margin: 0 2em;
 }
+
+table {
+    width: 100%;
+    color: #555;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.article td {
+        text-align: left; 
+    }
+
+td.td-date {
+    padding: 0 5px 0 10px;    
+    width: 50px;    
+}
+

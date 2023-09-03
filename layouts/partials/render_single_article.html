@@ -1,10 +1,23 @@
 {{ if or (.Date) (ne .Params.Kind "page") }}
 <div class="date">
     <time pubdate="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
-    <span class="author">by {{ .Site.Params.author }}</span>
 </div>
 {{ end }}
 <article>
+    <div class="GoogleAd_wide">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1903888574571147"
+            crossorigin="anonymous"></script>
+        <!-- Kad02 -->
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-1903888574571147"
+            data-ad-slot="1620150220"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
     {{ if eq (.Scratch.Get "isMainPage") "true"  -}}
     <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
     {{ else -}}
@@ -17,4 +30,21 @@
         {{ end }}
     </div>
     {{ replace .Content "<table>" "<table class='pure-table pure-table-striped'>" | safeHTML }}
+    
+        <div class ="GoogleAd_square">
+            <!-- Google AdSense-->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1903888574571147"
+                crossorigin="anonymous"></script>
+            <!-- Kad01 -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-1903888574571147"
+                data-ad-slot="6976114261"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            <!-- Google AdSense-->
+        </div>
 </article>
